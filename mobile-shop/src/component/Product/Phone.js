@@ -1,5 +1,6 @@
 import React from 'react';
 import './Phone.css'
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Phone = (props) => {
     const {name, img, price} = props.product;
@@ -12,7 +13,7 @@ const Phone = (props) => {
                 <h5 className='phone-name'>Name: {name}</h5>
                 <p>Price: ${price}</p>
                 <div className="d-grid gap-2">
-                    <button onClick={()=> buyNow(props.product)} className='btn btn-primary' type="button">Buy Now</button>
+                    <button onClick={()=> buyNow(props.product)} className='btn btn-primary' type="button">Buy Now  <AiOutlineShoppingCart /></button>
                 </div>
             </div>
             </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CartItem from '../CartItem/CartItem';
 import Phone from '../Product/Phone';
 import './Shop.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { RiDeleteBinLine } from 'react-icons/ri';
 
 const Shop = () => {
     const [phone, setPhone] = useState([]);
@@ -63,8 +63,8 @@ const Shop = () => {
                                 }
                             </div>
                             <div className="d-grid gap-2">
-                                <button onClick={chooseOne} className='btn btn-primary' type="button">Choose One <FontAwesomeIcon icon={regular('coffee')} /></button>
-                                <button onClick={cartRemove} className='btn btn-primary' type="button">Clear Cart</button>
+                                <button onClick={chooseOne} className='btn btn-primary' type="button">Choose One</button>
+                                <button onClick={cartRemove} className='btn btn-primary' type="button">Clear Cart <RiDeleteBinLine/> </button>
                             </div>
                         </div>
                     </div>
