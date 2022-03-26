@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import CartItem from '../CartItem/CartItem';
 import Phone from '../Product/Phone';
-import './Shop.css'
+import './Shop.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Shop = () => {
     const [phone, setPhone] = useState([]);
@@ -27,7 +28,17 @@ const Shop = () => {
             }
         }  
     }
-
+    const chooseOne = ()=> {
+        const randomNum = Math.round(Math.random() * cart.length);
+        let phoneChoose = [];
+        if( randomNum <  cart.length){
+            let randomPhoneChoose = cart[randomNum];
+            const newPhone = [...phoneChoose, randomPhoneChoose];
+            setCart(newPhone);
+        }else{
+            chooseOne();
+        }
+    }
     const cartRemove = ()=>{
         setCart([]);
     }
@@ -52,6 +63,7 @@ const Shop = () => {
                                 }
                             </div>
                             <div className="d-grid gap-2">
+                                <button onClick={chooseOne} className='btn btn-primary' type="button">Choose One <FontAwesomeIcon icon={regular('coffee')} /></button>
                                 <button onClick={cartRemove} className='btn btn-primary' type="button">Clear Cart</button>
                             </div>
                         </div>
