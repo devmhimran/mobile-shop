@@ -11,8 +11,8 @@ const Phone = (props) => {
                 <img src={img} alt="" />
                 <h5 className='phone-name'>Name: {name}</h5>
                 <p>Price: ${price}</p>
-                <div class="d-grid gap-2">
-                    <button onClick={()=> buyNow(props.product)} class="btn btn-primary" type="button">Buy Now</button>
+                <div className="d-grid gap-2">
+                    <button onClick={()=> buyNow(props.product)} className='btn btn-primary' type="button">Buy Now</button>
                 </div>
             </div>
             </div>
