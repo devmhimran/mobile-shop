@@ -1,0 +1,9 @@
+.Header-detail{
+    background-color: #262524;
+    padding: 30px;
+}
+.Header-detail h2 a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}

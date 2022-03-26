@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Nova 9",
+        "price": 20000,
+        "img": "./mobile-image/1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Galaxy S22 5G",
+        "price": 110000,
+        "img": "./mobile-image/2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "iPhone 13 Pro",
+        "price": 85000,
+        "img": "./mobile-image/3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "iPhone SE (2020)",
+        "price": 50000,
+        "img": "./mobile-image/4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Nova Y5",
+        "price": 25000,
+        "img": "./mobile-image/5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "iPhone 12 mini",
+        "price": 72000,
+        "img": "./mobile-image/6.jpg"
+    },
+    {
+        "id": "7",
+        "name": "iPhone XS Max",
+        "price": 65000,
+        "img": "./mobile-image/7.jpg"
+    },
+    {
+        "id": "8",
+        "name": "iPhone XR",
+        "price": 87000,
+        "img": "./mobile-image/8.jpg"
+    },
+    {
+        "id": "9",
+        "name": "iPhone 11",
+        "price": 100000,
+        "img": "./mobile-image/9.jpg"
+    }
+]
