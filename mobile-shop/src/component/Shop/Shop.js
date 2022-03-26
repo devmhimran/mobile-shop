@@ -25,9 +25,11 @@ const Shop = () => {
                 const newCart = [...cart,phone ];
                 setCart(newCart);
             }
-        }
-
-        
+        }  
+    }
+console.log(cart);
+    const cartRemove = ()=>{
+        setCart([]);
     }
     return (
         <div className='shop'>
@@ -48,6 +50,9 @@ const Shop = () => {
                                 {
                                 cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)
                                 }
+                            </div>
+                            <div className="d-grid gap-2">
+                                <button onClick={cartRemove} className='btn btn-primary' type="button">Clear Cart</button>
                             </div>
                         </div>
                     </div>
