@@ -27,7 +27,7 @@ const Shop = () => {
             }
         }  
     }
-console.log(cart);
+
     const cartRemove = ()=>{
         setCart([]);
     }
