@@ -7,6 +7,7 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 const Shop = () => {
     const [phone, setPhone] = useState([]);
     const [cart, setCart] = useState([]);
+    console.log(cart)
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -16,7 +17,7 @@ const Shop = () => {
   
     const buyNow = (phone)=>{
         
-        let findPhone = cart.find(cartFind => cartFind.id == phone.id)
+        let findPhone = cart.find(cartFind => cartFind.id === phone.id)
         if(findPhone){
             alert('Already Exists');
         }else{
